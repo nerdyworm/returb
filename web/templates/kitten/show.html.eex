@@ -1,0 +1,13 @@
+<h2>Show kitten</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @kitten.name %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: kitten_path(@conn, :edit, @kitten) %>
+<%= link "Back", to: kitten_path(@conn, :index) %>

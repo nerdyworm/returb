@@ -1,11 +1,9 @@
-# Script for populating the database. You can run it as:
-#
-#     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     Returb.Repo.insert!(%Returb.SomeModel{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
+for i <- 1..100 do
+  %Returb.Kitten{name: "Kitten number: #{i}"}
+  |> Returb.Repo.insert!()
+end
+
+for i <- 1..100 do
+  %Returb.Post{title: "Post: #{i}", body: "Some post content: #{i}"}
+  |> Returb.Repo.insert!()
+end

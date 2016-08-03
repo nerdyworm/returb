@@ -19,6 +19,7 @@ defmodule Returb.Router do
     get "/", PageController, :index
     get "/examples", PageController, :examples
     resources "/posts", PostController
+    resources "/kittens", KittenController
   end
 
   # Other scopes may use custom stacks.

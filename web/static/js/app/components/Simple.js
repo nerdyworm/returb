@@ -13,7 +13,12 @@ class Example extends React.Component {
 
   render() {
     const { name } = this.props;
-    return (<div onClick={this.handleClick}> Hello, {name}.  Click me to add to the example state.</div>);
+    return (
+      <div>
+        Hello, {name}.<br/>
+        <button onClick={this.handleClick}>Add Example to redux state</button>
+      </div>
+    );
   }
 }
 

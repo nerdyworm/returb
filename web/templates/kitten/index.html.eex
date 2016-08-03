@@ -1,0 +1,26 @@
+<h2>Listing kittens</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for kitten <- @kittens do %>
+    <tr>
+      <td><%= kitten.name %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: kitten_path(@conn, :show, kitten), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: kitten_path(@conn, :edit, kitten), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: kitten_path(@conn, :delete, kitten), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New kitten", to: kitten_path(@conn, :new) %>

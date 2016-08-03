@@ -1,0 +1,6 @@
+<h2>New kitten</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: kitten_path(@conn, :create) %>
+
+<%= link "Back", to: kitten_path(@conn, :index) %>

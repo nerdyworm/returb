@@ -20,7 +20,8 @@
           <ul class="nav nav-pills pull-right">
             <li><a href="/">Index</a></li>
             <li><a href="/posts">Posts</a></li>
-            <li><a href="/examples">Examples</a></li>
+            <li><a href="/kittens">Kittens</a></li>
+            <li><a href="/examples">Reset Examples</a></li>
           </ul>
         </nav>
         <span class="logo"></span>
