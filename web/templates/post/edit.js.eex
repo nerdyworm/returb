@@ -1,0 +1,5 @@
+<% html =  render "form.html", changeset: @changeset,
+                        action: post_path(@conn, :update, @post) %>
+
+var form = document.getElementById('post_form');
+form.innerHTML = "<%= escape_javascript(html) %>";

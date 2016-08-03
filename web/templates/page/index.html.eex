@@ -1,0 +1,1 @@
+<%= mount("Simple", %{name: "Benjamin Silas Rhodes (nerdyworm)"}) %>
