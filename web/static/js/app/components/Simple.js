@@ -18,6 +18,7 @@ class Example extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
+
 });
 
 export default connect(mapStateToProps)(Example);

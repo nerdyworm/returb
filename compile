@@ -1,0 +1,2 @@
+webpack -p --define process.env.NODE_ENV=\"production\" --progress --colors
+MIX_ENV=prod mix phoenix.digest
